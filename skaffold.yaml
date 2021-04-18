@@ -1,0 +1,13 @@
+apiVersion: skaffold/v2alpha4
+kind: Config
+metData:
+  name: skaffold
+build:
+  artifacts:
+  - image: kubtest
+    context: default
+  deploy:
+    kubectl:
+      manifests:
+      - deployment.yaml
+      - service.yaml

@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-depl
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kubtest
+  template:
+    metadata:
+        labels:
+          app: kubtest
+    spec:
+      containers:
+      - name: k8s
+        image: aitakynsultan/k8s:latest
+        ports:
+          - name: web
+            containerPort: 80
+        livnessProbe:
+          httpGet:
+            port: 80
+            path: /
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          timeoutSeconds: 2
+        readinessProbe:
+          httpGet:
+            port: 80
+            path: /health
+          initialDelaySeconds: 10
+          periodSeconds: 5
