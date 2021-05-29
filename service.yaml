@@ -4,9 +4,9 @@ metadata:
   name: hello-service
 spec:
   selector:
-    app: kubtest
-    ports:
-      - protocol: TCP
-        port: 9000
-        targetPort: web
-    type: NodePort
+    app: hello-py-app
+  ports:
+    - protocol: TCP
+      port: 9000
+      targetPort: 8000
+  type: ClusterIP
