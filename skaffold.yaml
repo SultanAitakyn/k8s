@@ -9,5 +9,4 @@ build:
 deploy:
   kubectl:
     manifests:
-      - service.yaml
-      - deployment.yaml
+      - manifests
