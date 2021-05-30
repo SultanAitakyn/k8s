@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b3c499d5-686e-4e59-819c-9655cd5d36e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifests/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manifests/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifests/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manifests/service.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skaffold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/skaffold.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +35,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622287409912</updated>
       <workItem from="1622287412432" duration="1503000" />
+      <workItem from="1622372697238" duration="3694000" />
     </task>
     <servers />
   </component>

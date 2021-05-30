@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: hello-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+    - host: sa.homework
+      http:
+        paths:
+          - path: / # hello.world/version -> ip_service:9000/version
+            pathType: Prefix
+            backend:
+              serviceName: hello-service
+              servicePort: 9000
